@@ -3,6 +3,7 @@
     { name: "Photo 1", url: "photos/me.jpg", likes: 0 },
     { name: "Photo 2", url: "photos/me2.jpg", likes: 0 },
     { name: "Photo 3", url: "photos/me3.jpg", likes: 0 }
+    { name: "Photo 3", url: "photos/marek.jpg", likes: 0 }
 ];
 
 let currentIndex = 0;
