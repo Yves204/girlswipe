@@ -1,0 +1,125 @@
+
+  * {
+    box-sizing: border-box;
+}
+
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f8; /* Light background color */
+    height: 100vh;
+    overflow: hidden;
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Logo styling */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4081; /* Playful pink color */
+    margin-bottom: 20px;
+}
+
+.photo-container {
+    position: relative;
+    width: 90%;
+    max-width: 350px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.photo-card {
+    width: 100%;
+    height: 100%; /* Make it fill the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    position: absolute;
+    top: 0; /* Ensure photo is centered vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Start fully opaque */
+}
+
+.photo-card img {
+    border-radius: 10px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.leaderboard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    z-index: 1;
+    margin-bottom: 20px; /* Margin for spacing */
+}
+
+.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.swipe-indicator {
+    font-size: 2rem;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    z-index: 10;
+    transition: opacity 0.5s ease;
+}
+
+.swipe-left {
+    color: red;
+}
+
+.swipe-right {
+    color: green;
+}
+
+/* Like and Next Buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 350px;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #ff4081; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e63972; /* Darker shade on hover */
+}

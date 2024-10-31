@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GirlSwipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="logo">GirlSwipe</div>
+
+    <div class="leaderboard">
+        <h2>Leaderboard</h2>
+        <div class="leaderboard-item">
+            <span>Rob</span>
+            <span>Likes: <span class="likes-count" id="likes1">0</span></span>
+        </div>
+        <div class="leaderboard-item">
+            <span>Bob</span>
+            <span>Likes: <span class="likes-count" id="likes2">0</span></span>
+        </div>
+        <div class="leaderboard-item">
+            <span>Kevin</span>
+            <span>Likes: <span class="likes-count" id="likes3">0</span></span>
+        </div>
+    </div>
+
+    <div class="photo-container">
+        <div class="swipe-indicator swipe-left" id="swipeLeft">❤️ LOVE</div>
+        <div class="swipe-indicator swipe-right" id="swipeRight">➡️ NEXT</div>
+        <div class="photo-card" id="photoCard"></div>
+    </div>
+
+    <div class="button-container">
+        <button class="button" id="likeButton">Like</button>
+        <button class="button" id="nextButton">Next</button>
+    </div>
+
+    <script src="girlswipe.js"></script>
+
+</body>
+</html>
